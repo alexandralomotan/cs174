@@ -1,5 +1,5 @@
 <?php
-$username = 'CS 174';
+$username = 'CS174';
 $password = 'pwcs174';
     try {
         //connect to database
