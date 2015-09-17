@@ -1,0 +1,16 @@
+body {
+    margin: auto;
+    width: 80%;
+    border:3px solid #8AC007;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+img.ctrl-a_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
