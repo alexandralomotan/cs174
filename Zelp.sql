@@ -21,7 +21,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE DATABASE IF NOT EXISTS `Zelp`;
-SELECT DATABASE `Zelp`;
+use Zelp;
 
 -- --------------------------------------------------------
 
