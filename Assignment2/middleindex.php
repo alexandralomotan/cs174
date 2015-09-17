@@ -28,7 +28,36 @@
 	    <input type="checkbox" name="location" value="yes"/>Mexican
 	</p>
 	
-	<img src="./SanJoseMap.png"/>
+	
+	<p> 
+            <form action="queryDB-zelp.php" method="post">
+                <fieldset>
+                    <legend>Select Restaurant (php)</legend>
+                    <p>
+                        <label>Restaurant Name:</label>
+                        <input name="restaurantName" type="text" placeholder="Submit blank to show all."/>
+                    </p>
+                                    <p>
+                        <input type="submit" value="Submit" />
+                    </p>
+                </fieldset>
+            </form>
+        </p>
+	
+	<p> 
+            <form action="queryDB-zelp-cuisine.php" method="post">
+                <fieldset>
+                    <legend>Cuisine (php)</legend>
+                    <p>
+                        <label>Cuisine:</label>
+                        <input name="restaurantName" type="text" placeholder="Submit blank to show all."/>
+                    </p>
+                                    <p>
+                        <input type="submit" value="Submit" />
+                    </p>
+                </fieldset>
+            </form>
+        </p>
 	
     </div>
 </body>
