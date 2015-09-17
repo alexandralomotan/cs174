@@ -14,3 +14,32 @@ img.ctrl-a_image {
     margin-left: auto;
     margin-right: auto;
 }
+
+<style>
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height: auto;
+    width: auto;
+    float:left;
+    padding:5px; 
+}
+#section {
+    width:auto;
+    float:left;
+    padding:10px; 
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px; 
+}
+</style>
