@@ -1,0 +1,29 @@
+<style>
+#header {
+    background-color:#FF0000;
+    color:white;
+    text-align:center;
+    padding:5px;
+    overflow: auto;
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height: 500px;
+    width: auto;
+    float:left;
+    padding:5px; 
+}
+#body {
+    width:auto;
+    float:left;
+    padding:10px; 
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px; 
+}
+</style>

@@ -7,7 +7,9 @@
 
 <body>
     <div id="nav">
-        <a href="./Simple_Web.html">Simple_Web.html</a>
+	<a href="./index.php">Home</a><br>
+        <a href="./simple_web.php">Simple_Web</a>
+	
     </div>
 </body>
 

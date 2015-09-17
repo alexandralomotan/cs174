@@ -7,7 +7,7 @@
 
 <body>
     <div id="header">
-        <h1>CS 174 Homework 2</h1>
+        <h1>Zelp</h1>
     </div>
 </body>
 
