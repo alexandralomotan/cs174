@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="./css/styles.css" type="text/css" />
+	<link rel="stylesheet" href="./css/layout.css" type="text/css" />
+	<link rel="stylesheet" href="./css/validate.css" type="text/css" />
+    <script type="text/javascript">
+	function addToRestaurantTable()
+	{
+	    var name = document.getElementById("name").value;
+	    var location = document.getElementById("city_fk").value;
+	    var cuisine = document.getElementById("cuisine_fk").value;
+	    var price = document.getElementById("price_range_fk").value
+	    if (name == "") {
+		alert("Missing restaurant name");
+	    }
+	    else {
+		alert("Added: \n" + name + "\n" + location + "\n" + cuisine + "\n" + price);
+	    }
+	}
+    </script>
+</head>
+
+<body>
+    <div id="body">
+        <form action = "queryDB-add-restaurant.php" method="post">
+            <fieldset>
+                <legend>Add Restaurant</legend>
+                <p>
+                    <label>Restaurant Name:</label>
+                    <input type = "text"
+			   size="35"
+                       placeholder = "Enter restaurant name"
+                       id = "name"
+                       required />
+                </p>
+                <p>
+                    <label>Location:</label>
+                    <input type = "text"
+			   size="35"
+                       placeholder = "Enter location of restaurant"
+                       id = "city_fk"
+                       required />
+                </p>
+                <p>
+                    <label>Cuisine:</label>
+                    <input type = "text"
+			   size="35"
+                       placeholder = "Enter type of cuisine"
+                       id = "cuisine_fk"
+                       required />
+                </p>
+                <p>
+                    <label>Price Range:</label>
+                    <input type = "text"
+			   size="35"
+                       placeholder = "inexpensive, moderate, pricey, expensive"
+                       id = "price_range_fk"
+                       required />
+                </p>
+                <p>
+                    <button type = "submit" onclick="addToRestaurantTable()">Submit</button>
+                </p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
