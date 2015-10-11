@@ -9,6 +9,7 @@
     <div id="nav">
 	<a href="./index.php">Home</a><br>
 	<a href="./add-restaurant.php">Add Restaurant</a><br>
+	<a href="./food-pics.php">Food Pictures</a><br>
         <a href="./simple_web.php">Simple_Web</a>
 	
     </div>

@@ -9,10 +9,10 @@
 
 <body>
     <?php
-        include "header.php";
-	include "navbar.php";
-	include "middle-add-restaurant.html";
-	include "footer.php";
+        include "./layout/header.php";
+	include "./layout/navbar.php";
+	include "./middle/middle-add-restaurant.html";
+	include "./layout/footer.php";
     ?>
 </body>
 

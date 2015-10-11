@@ -30,7 +30,7 @@
 	
 	
 	<p> 
-            <form action="queryDB-zelp.php" method="post">
+            <form action="./queries/queryDB-zelp.php" method="post">
                 <fieldset>
                     <legend>Select Restaurant (php)</legend>
                     <p>
@@ -45,7 +45,7 @@
         </p>
 	
 	<p> 
-            <form action="queryDB-zelp-cuisine.php" method="post">
+            <form action="./queries/queryDB-zelp-cuisine.php" method="post">
                 <fieldset>
                     <legend>Cuisine (php)</legend>
                     <p>

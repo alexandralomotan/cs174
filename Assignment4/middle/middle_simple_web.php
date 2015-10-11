@@ -23,7 +23,7 @@
 	</p>
         
         <p> 
-            <form action="queryDB.php" method="post">
+            <form action="./queries/queryDB.php" method="post">
                 <fieldset>
                     <legend>Select Restaurant (php)</legend>
                     <p>
