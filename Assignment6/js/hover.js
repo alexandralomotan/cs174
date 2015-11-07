@@ -8,7 +8,7 @@ function init()
 function highlight()
 {
     $(this).css(
-        {"background": "black",
+        {"background": "red",
          "color":      "white"}
     );
 }

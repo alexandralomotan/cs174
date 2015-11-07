@@ -2,11 +2,7 @@
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
-	<!--<link rel="stylesheet" href="./css/styles.css" type="text/css" />-->
-	<!--<link rel="stylesheet" href="./css/layout.css" type="text/css" />-->
-  <link rel="stylesheet" href="./jquery-ui-1.11.4.custom/jquery-ui.css" type="text/css" />
-  <script type="text/javascript" href="./jquery-ui-1.11.4.custom/jquery-ui.js"></script>
-  <script type="text/javascript" href="./js/datepicker.js"></script>
+  <script src="js/datepicker.js"></script>
 </head>
 
 <body>
@@ -39,7 +35,7 @@
                         <label>Restaurant Name:</label>
                         <input name="restaurantName" type="text" placeholder="Submit blank to show all."/>
                     </p>
-                                    <p>
+                    <p>
                         <input type="submit" value="Submit" />
                     </p>
                 </fieldset>
@@ -62,7 +58,7 @@
         </p>
 
         <p>
-          Date: <input type="text" id="datepicker" />
+          Date: <input id="datepicker" type="text" placeholder="Click to select a date"/>
         </p>
 
     </div>
