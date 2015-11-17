@@ -1,0 +1,39 @@
+#header {
+    font: 100% "Trebuchet MS", sans-serif;
+    background-color:#FF0000;
+    color:white;
+    text-align:center;
+    padding:5px;
+    overflow: auto;
+}
+#navbar {
+    font: 100% "Trebuchet MS", sans-serif;
+    line-height:30px;
+    background-color:#eeeeee;
+    height: 500px;
+    width: 150px;
+    float:left;
+    padding:5px; 
+}
+#body {
+    font: 100% "Trebuchet MS", sans-serif;
+    width:auto;
+    float:left;
+    padding:10px; 
+}
+#footer {
+    font: 100% "Trebuchet MS", sans-serif;
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px; 
+}
+
+
+#all {
+    background-color: white;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
