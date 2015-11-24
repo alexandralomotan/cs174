@@ -7,7 +7,7 @@
 
 <body>
     <div id="footer">
-        Team CTRL-A CS174 HW 7
+        Team CTRL-A CS174
     </div>
 </body>
 

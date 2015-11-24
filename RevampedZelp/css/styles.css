@@ -11,3 +11,20 @@ img.ctrl-a_image {
     margin-left: auto;
     margin-right: auto;
 }
+
+table {
+    border: 1px;
+    border-collapse:collapse;
+    table-layout:fixed;
+    width:700px;
+}
+
+table tr {
+    border:solid 1px #fab;
+}
+
+table td {
+    border:solid 1px #fab;
+    width:200px;
+    word-wrap:break-word;
+}
