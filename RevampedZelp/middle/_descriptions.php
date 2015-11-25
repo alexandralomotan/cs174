@@ -21,19 +21,19 @@
                 <th>Inputs</th>
             </tr>-->
             <tr>
-                <td>Restaurant Name</td>
+                <td>(Restaurant Name)</td>
                 <td>Price Range:</td>
-                <td>Third Column</td>
+                <td>(price range)</td>
             </tr>
             <tr>
-                <td rowspan=2>Description</td>
+                <td rowspan=2>(Description)</td>
                 <td>City:</td>
-                <td>Third Column</td>
+                <td>(city)</td>
             </tr>
             <tr>
                 <!--blank-->
                 <td>Cuisine:</td>
-                <td>Third Column</td>
+                <td>(cuisine)</td>
             </tr>
         </table>
         

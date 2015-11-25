@@ -9,6 +9,35 @@
 
 <body>
     <div id="body">
+	
+	<!--Drop down menu (ajax)-->
+	<form action="">
+	    <select name="cuisine" onchange="showRestaurant(this.value)">
+		<option value="">Select a cuisine:</option>
+		<option value="American">American</option>
+		<option value="Chinese">Chinese</option>
+		<option value="Cuban">Cuban</option>
+		<option value="Japanese">Japanese</option>
+		<option value="Vietnamese">Vietnamese</option>
+	    </select>
+	</form>
+	<div id="txtHint">Pick a cuisine...</div>
+	<script>
+	    function showRestaurant(str) {
+		var xhttp;
+		if (str != "") {
+		    document.getElementById("txtHint").innerHTML = str;
+		    return;
+		}
+		if (str == "") {
+		    document.getElementById("txtHint").innerHTML = "Pick a cuisine...";
+		    return;
+		}
+	      }
+	</script>
+	
+	<br>
+	    
 	<?php
   	$username = 'zelp_admin';
 	$password = 'zelp';

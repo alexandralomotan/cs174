@@ -17,11 +17,9 @@
 	    Search: <input type="text" name="restaurantName">
 	    <input type="submit" value="Submit">
 	</form>
-	
-	<br>
-	Welcome to Zelp
-	<br>
-	<br>
+
+	<h1>Welcome to Zelp</h1>
+
 	<p>
 	    Featured Restaurant of the Week: <br><br>
 	
