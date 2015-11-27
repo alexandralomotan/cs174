@@ -21,6 +21,17 @@
     float:left;
     padding:10px; 
 }
+
+#content {
+    font: 100% "Trebuchet MS", sans-serif;
+    min-height: 100%;
+    width:auto;
+    float:left;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 #footer {
     font: 100% "Trebuchet MS", sans-serif;
     background-color:black;

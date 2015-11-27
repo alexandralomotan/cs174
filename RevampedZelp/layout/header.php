@@ -8,6 +8,7 @@
 <body>
     <div id="header">
         <h1>Zelp</h1>
+	<h3>The South Bay's Restaurant Database</h3>
     </div>
 </body>
 

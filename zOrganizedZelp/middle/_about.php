@@ -8,7 +8,9 @@
 
 <body>
     <div id="content">
-	     About page
+	
+	
+	This website was created by Alexandra Lomotan, Anthony Tsang, and Andy Le.
     </div>
 </body>
 
