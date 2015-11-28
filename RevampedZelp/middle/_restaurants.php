@@ -9,7 +9,7 @@
 
 <body>
     <div id="body">
-	
+	Pick a cuisine: <br>
 	<!--Drop down menu (ajax)-->
 	<!--set action to the path of where restaurants.php is located on your machine-->
 	<form action = "http://localhost/CS174/RevampedZelp/restaurants.php"> 
@@ -25,7 +25,7 @@
 	
 	<br>
 	
-	<div id="txtHint">Pick a cuisine...</div>
+	<div id="txtHint"></div>
 	<script>
 	    function showRestaurant(str) {
 		var xhttp;
