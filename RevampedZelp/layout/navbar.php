@@ -19,8 +19,8 @@
 <body>
     <div id="navbar">
 	<a href="./index.php">Home</a><br>
-	<a href="./restaurants.php">Restaurants</a><br>
-	<a href="./descriptions.php">Rest W/ Descriptions</a><br>
+	<a href="./restaurants.php">Search Cuisines</a><br>
+	<a href="./descriptions.php">Restaurants</a><br>
 	<a href="./pictures.php">Pictures</a><br>
 	<a href="./about.php">About</a><br>
     </div>
