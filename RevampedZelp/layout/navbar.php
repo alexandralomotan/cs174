@@ -19,10 +19,9 @@
     });
 <<<<<<< HEAD
     </script>-->
-=======
+
     </script>
-    
->>>>>>> origin/master
+
 </head>
 
 <body>
@@ -32,21 +31,11 @@
 	<a href="./descriptions.php">Restaurants</a><br>
 	<a href="./pictures.php">Pictures</a><br>
 	<a href="./about.php">About</a><br>
-<<<<<<< HEAD
     
 	<p>
           Date: <input id="datepicker" type="text" placeholder="Click to select a date"/>
         </p>
 		
-=======
-	
-	<!--	Theme isn't working. WHY.
-	<br>
-	<p>
-	    <input id="datepicker" type="text" placeholder="Click to select a date"/>
-        </p>
-	-->
->>>>>>> origin/master
     </div>
 </body>
 
