@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
 	<link rel="stylesheet" href="./css/styles.css" type="text/css" />
     <script type="text/javascript" src="js/hover.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+	<script src="js/datepicker.js"></script>
+    <!--<script>
     $(document).ready(function(){
 	$("a").hover(function(){
 	    $(this).css("background-color", "red");
@@ -13,7 +14,7 @@
 	    $(this).css("background-color", "#eeeeee");
 	});
     });
-    </script>
+    </script>-->
 </head>
 
 <body>
@@ -23,6 +24,11 @@
 	<a href="./descriptions.php">Restaurants</a><br>
 	<a href="./pictures.php">Pictures</a><br>
 	<a href="./about.php">About</a><br>
+    
+	<p>
+          Date: <input id="datepicker" type="text" placeholder="Click to select a date"/>
+        </p>
+		
     </div>
 </body>
 
