@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.4.3
+-- version 4.4.14
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 18, 2015 at 12:39 AM
--- Server version: 5.6.24
--- PHP Version: 5.6.8
+-- Generation Time: Dec 09, 2015 at 08:50 PM
+-- Server version: 5.6.26
+-- PHP Version: 5.5.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -14,14 +14,11 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Database: `Zelp`
 --
-
-CREATE DATABASE IF NOT EXISTS `Zelp`;
-use Zelp;
 
 -- --------------------------------------------------------
 
@@ -33,7 +30,7 @@ CREATE TABLE IF NOT EXISTS `City` (
   `id` int(11) NOT NULL,
   `name` varchar(30) NOT NULL COMMENT 'City Name',
   `zip_code` int(5) DEFAULT NULL COMMENT 'City Zip Code'
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `City`
@@ -42,7 +39,8 @@ CREATE TABLE IF NOT EXISTS `City` (
 INSERT INTO `City` (`id`, `name`, `zip_code`) VALUES
 (1, 'Fremont', 94539),
 (2, 'Milpitas', 95035),
-(3, 'San Jose', 95192);
+(3, 'San Jose', 95192),
+(4, 'Cupertino', NULL);
 
 -- --------------------------------------------------------
 
@@ -54,7 +52,7 @@ CREATE TABLE IF NOT EXISTS `Cuisine` (
   `id` int(11) NOT NULL,
   `name` varchar(80) NOT NULL COMMENT 'Type of Cuisine',
   `description` varchar(160) DEFAULT NULL COMMENT 'Description of Cuisine'
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `Cuisine`
@@ -63,7 +61,11 @@ CREATE TABLE IF NOT EXISTS `Cuisine` (
 INSERT INTO `Cuisine` (`id`, `name`, `description`) VALUES
 (1, 'American', 'Examples: Burgers, Hot Dogs, Ribs.'),
 (2, 'Chinese', 'Examples: Chow Mein, Fried Rice, Orange Chicken'),
-(3, 'Japanese', 'Examples: Chicken Teriyaki,Donburi, Sushi, Sashimi, Udon');
+(3, 'Japanese', 'Examples: Chicken Teriyaki,Donburi, Sushi, Sashimi, Udon'),
+(4, 'Cuban', 'Lechon asado, chicken soup, arroz con pollo'),
+(5, 'Soul', 'Fried chicken, jambalaya, catfish'),
+(6, 'Italian', 'Pasta, pizza'),
+(7, 'Vietnamese', 'Pho, spring rolls');
 
 -- --------------------------------------------------------
 
@@ -99,18 +101,25 @@ CREATE TABLE IF NOT EXISTS `Restaurant` (
   `name` varchar(80) NOT NULL,
   `cuisine_fk` int(11) DEFAULT NULL,
   `city_fk` int(11) DEFAULT NULL,
-  `price_range_fk` int(11) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+  `price_range_fk` int(11) DEFAULT NULL,
+  `description` varchar(200) DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `Restaurant`
 --
 
-INSERT INTO `Restaurant` (`id`, `name`, `cuisine_fk`, `city_fk`, `price_range_fk`) VALUES
-(1, 'Pepper Lunch', 3, 2, 2),
-(2, 'Five Guys', 1, 1, 1),
-(3, 'In N Out', 1, 1, 1),
-(4, 'Panda Express', 2, 3, 1);
+INSERT INTO `Restaurant` (`id`, `name`, `cuisine_fk`, `city_fk`, `price_range_fk`, `description`) VALUES
+(1, 'Pepper Lunch', 3, 2, 2, 'pepper_lunch.html'),
+(2, 'Five Guys', 1, 1, 1, 'five_guys.html'),
+(3, 'In N Out', 1, 1, 1, 'in_n_out.html'),
+(4, 'Panda Express', 2, 3, 1, 'panda_express.html'),
+(5, 'Burger King', 1, 3, 1, 'burger_king.html'),
+(6, 'Sonoma Chicken Coop', 1, 3, 2, 'sonoma_chicken_coop.html'),
+(7, 'Alexander''s Steak House', 1, 4, 4, 'alexanders_steak_house.html'),
+(8, 'Pho House', 7, 2, 1, 'pho_house.html'),
+(9, 'Los Cubanos Restaurant', 4, 3, 3, 'los_cubanos.html'),
+(10, 'Habana Cuba', 4, 3, 3, 'habana_cuba.html');
 
 --
 -- Indexes for dumped tables
@@ -148,12 +157,12 @@ ALTER TABLE `Restaurant`
 -- AUTO_INCREMENT for table `City`
 --
 ALTER TABLE `City`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `Cuisine`
 --
 ALTER TABLE `Cuisine`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT for table `Price_Range`
 --
@@ -163,7 +172,7 @@ ALTER TABLE `Price_Range`
 -- AUTO_INCREMENT for table `Restaurant`
 --
 ALTER TABLE `Restaurant`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
