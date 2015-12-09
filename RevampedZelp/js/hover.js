@@ -2,7 +2,7 @@ $(init);
 
 function init()
 {
-    $("li").hover(highlight, plain);
+    $("ul").hover(highlight, plain);
 }
 
 function highlight()
@@ -16,7 +16,7 @@ function highlight()
 function plain()
 {
     $(this).css(
-        {"background": "white",
+        {"background": "#eeeeee",
          "color":      "black"}
     );
 }

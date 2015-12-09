@@ -26,11 +26,11 @@
 
 <body>
     <div id="navbar">
-	<a href="./index.php">Home</a><br>
-	<a href="./restaurants.php">Search Cuisines</a><br>
-	<a href="./descriptions.php">Restaurants</a><br>
-	<a href="./pictures.php">Pictures</a><br>
-	<a href="./about.php">About</a><br>
+	<ul><a href="./index.php">Home</a></ul>
+	<ul><a href="./restaurants.php">Search Cuisines</a></ul>
+	<ul><a href="./descriptions.php">Restaurants</a></ul>
+	<ul><a href="./pictures.php">Pictures</a></ul>
+	<ul><a href="./about.php">About</a></ul>
     
 	<p>
           Date: <input id="datepicker" type="text" placeholder="Click to select a date"/>
